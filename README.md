@@ -29,5 +29,11 @@
 1. Implementacija validacije v validate_data.py
 2. Interpretacija: Podatki niso uspešno validarani, saj ima current_data.csv stolpec AVG_subject, reference data pa tega nima.
 2. Implementacija testiranje v test_data.py
-3. 
+3. Interpretacija: Vsi podatki imajo drift score 1 - data drift ni detected. To pomeni da je distribucija podatkov enaka tako pri reference data kot current data. 
+4. Dodajanje na dvc: dvc add data/processed
+5. Dodajanje na git: git add ., git commit -m "Korak 4 in 5", git push
+6. Push na dvc: dvc push -r origin
 
+# Učenje napovednega modela
+1. Implementacija modela v train_eval.py
+2. Dodajanje na git: git add ., git commit -m "Korak 6", git push
