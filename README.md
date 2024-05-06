@@ -37,3 +37,7 @@
 # Učenje napovednega modela
 1. Implementacija modela v train_eval.py
 2. Dodajanje na git: git add ., git commit -m "Korak 6", git push
+
+# Razvoj spletne storitve
+1. Dodajanje flask knjižnice: poetry add flask
+2. Dodajanje na git: git add ., git commit -m "Korak 6", git push
