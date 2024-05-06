@@ -4,3 +4,23 @@
 3. Dodajanje knjižnic: poetry add pandas, poetry add scikit-learn, poetry add evidently
 4. Kreiranje ostalih map: mkdir -p data/{processed,raw} models reports src/{data,models}
 5. Priprava __init__.py: touch src/__init__.py
+6. Inicializacija git-a: git init 
+7. Ustvarjanje repota na githubu. 
+8. Povezava lokalnega repota z githubom: git remote add origin git@github.com:ivanalav00/iis_izpit.git
+9. Inital commit: git add ., git commit -m "Initial commit", git push --set-upstream origin master, 
+
+# Vzpostavitev verzioniranja podatkov
+1. Inicializacija dvc: dvc init.
+2. Priprava repo-ta na Dagshubu (povezava z github projektom). 
+3. Dodajanje dvc remote: dvc remote add origin s3://dvc, dvc remote modify origin endpointurl https://dagshub.com/ivanalav00/iis_izpit.s3
+4. Konfiguracija: dvc remote modify origin --local access_key_id ###, dvc remote modify origin --local secret_access_key #####
+5. Verzioniranje mape data: dvc add data
+6. Dodajanje na git: git add .gitignore data.dvc, git commit -m "First data.dvc", git push
+7. Push na dagshub: dvc remote default origin, dvc push
+
+# Združevanje podatkov
+1. Dodajanje dodatne knjižnice: poetry add openpyxl
+
+
+
+
