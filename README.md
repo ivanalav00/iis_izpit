@@ -20,7 +20,14 @@
 
 # Združevanje podatkov
 1. Dodajanje dodatne knjižnice: poetry add openpyxl
+2. Implementacija kode.
+2. Dodajanje na dvc: dvc add data/raw
+3. Dodajanje na git: git add ., git commit -m "Korak 3", git push
+4. Push na dvc: dvc push -r origin
 
-
-
+# Validiranje in Testiranje podatkov
+1. Implementacija validacije v validate_data.py
+2. Interpretacija: Podatki niso uspešno validarani, saj ima current_data.csv stolpec AVG_subject, reference data pa tega nima.
+2. Implementacija testiranje v test_data.py
+3. 
 
